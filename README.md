@@ -1,14 +1,14 @@
 #Icarus
 
 ### The blog theme you may fall in love with, coming to Hexo. [Preview](http://ppoffice.github.io/hexo-theme-icarus/)
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/preview.jpg "")
+![](http://hellochensqblog.qiniudn.com/15-5-26/91951761.jpg)
 
 ## Installation
 
 ### Install
 
 ``` bash
-$ git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus
+$ git clone https://github.com/hellochensq/hexo-theme-icarus.git themes/icarus
 ```
 
 **Icarus requires Hexo 3.0 and above.**
@@ -114,13 +114,11 @@ language: zh-CN
 
 A nice place to show yourself. You can add your own information in your site's `_config.yml`
 
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/profile.png "")
+![](http://hellochensqblog.qiniudn.com/15-5-26/34867663.jpg)
 
 ### Responsive Layout
 
 Icarus knows on what screen size you are browsering the website, and reorganize the layout to fit your device.
-
-![](http://ppoffice.github.io/hexo-theme-icarus/gallery/responsive.jpg "")
 
 ### Fancybox
 
