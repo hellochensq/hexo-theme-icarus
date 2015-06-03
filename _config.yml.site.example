@@ -52,8 +52,8 @@ category_map:
 tag_map:
 
 archive: 1
-category: 1
-tag: 1
+category: 2
+tag: 2
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
