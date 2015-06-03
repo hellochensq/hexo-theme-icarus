@@ -19,16 +19,20 @@
           </p>
         <% } %>
       <% } else { %>
-	    <!-- Table of Contents -->
-        <% if (!index && post.toc){ %>
-        <div id="toc" class="toc-article">
-           <strong class="toc-title">文章目录</strong>
+	    <!-- Table of Contents -->        
+      <% if (!index && post.toc){ %>
+            <div id="toc" class="toc-article">
+                    <strong class="toc-title"><%= __('文章目录') %></strong>
            <%- toc(post.content) %>
-       </div>
-       <% } %>
+           </div>
+          <% } %>
+
         <%- post.content %>
       <% } %>
     </div>
+    <%- partial('post/cc') %>
+    <%- partial('post/highlight') %>
+    <%- partial('post/math') %>
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('article.share') %></a>
       <% if (post.comments && config.disqus_shortname){ %>
