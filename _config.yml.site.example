@@ -76,6 +76,11 @@ pagination_dir: page
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
 theme: icarus
 
+feed:
+  type: atom ##feed类型 atom或者rss2
+  path: atom.xml ##feed路径
+  limit: 20 ##feed文章最小数量
+ 
 # Disqus
 # disqus_shortname: hexo-theme-icarus
 

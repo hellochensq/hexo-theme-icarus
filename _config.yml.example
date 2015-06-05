@@ -17,6 +17,7 @@ widgets:
 - tagcloud
 - archive
 thumbnail: true
+rss: /atom.xml
 
 # Contacts
 contacts:
