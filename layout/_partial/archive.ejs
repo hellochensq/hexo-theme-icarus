@@ -61,7 +61,38 @@
     <div class="article-simple-inner article-inner">
       <header class="article-simple-header">
         <a class="article-simple-title" href="<%- url_for(post.path) %>">
-          <span class="article-simple-span"><%- post.date.format('MM-DD') %></span>
+          <span class="article-simple-span"><%- post.date.format('YYYY-MM-DD') %></span>
+          <%- post.title %>
+        </a>
+      </header>
+    </div>
+  </article>
+  <% }) %>
+<% } %>
+
+<% if (is_tag()){ %>
+  <div class="archive-list-year-wrap">
+    <i class="fa fa-archive"></i>
+    <a href="<%- url_for('tags/' + page.tag) %>" class="archive-year"><%- page.tag %></a>
+  </div>
+  <% site.posts.sort('date', 'desc').each(function(post){ %>
+
+  <% var tag; %>
+  <% if (post.tags && post.tags['data'] && post.tags['data'][0] && post.tags['data'][0]['name']){ %>
+    <% tag = post.tags['data'][0]['name']; %>
+  <% } else { %>
+    <% return; %>
+  <% } %>
+  
+  <% if (tag != page.tag){ %>
+    <% return; %>
+  <% } %>
+
+  <article class="article-simple" itemscope="" itemprop="blogPost">
+    <div class="article-simple-inner article-inner">
+      <header class="article-simple-header">
+        <a class="article-simple-title" href="<%- url_for(post.path) %>">
+          <span class="article-simple-span"><%- post.date.format('YYYY-MM-DD') %></span>
           <%- post.title %>
         </a>
       </header>
